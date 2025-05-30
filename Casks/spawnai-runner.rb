@@ -9,21 +9,21 @@ cask "spawnai-runner" do
     "macos" => {
       "x86_64" => {
         url: "https://rstream.io/api/packages/6839c445bd339d43881ff42b/download",
-        sha256: "e58c03caad4682a2b8d228eba5af7a221ee50b7a45ec7568a57875e1c885f062",
+        sha256: "337466c0294d36f0fd3b2d791081377503deb73172ec943f85b2df3a986f8c9b",
       },
       "arm64" => {
         url: "https://rstream.io/api/packages/6839c444008a72be4945bd7a/download",
-        sha256: "08fb04d9dbc5a84e4173c267b4484e7bea0f95a9ed14921e1570d2ff159118ba",
+        sha256: "997712aac48f8590d0caa04c602e97da7b96ca14ebb009347a9dc79f02071535",
       }
     },
     "linux" => {
       "x86_64" => {
         url: "https://rstream.io/api/packages/6839c4468fb4e073e6351acf/download",
-        sha256: "1187816eefb484df0248b95408bca14c051566eff378b04b6c7b60202cefec7c",
+        sha256: "a8d58a76762ce6043047f826425f206d0ee3fce1514c4fd08dc802a6c32354d1",
       },
       "arm64" => {
         url: "https://rstream.io/api/packages/6839c447bda48d61d2f4a776/download",
-        sha256: "d37e375d88b24d8ed35103218a8e28137a16193cee608b2e9eef4997973ba504",
+        sha256: "ab97c33a915572b61de77629a8314079b4e8dc4c46afccbef3b357b83c8163ea",
       }
     }
   }
