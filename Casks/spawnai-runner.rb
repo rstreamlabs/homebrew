@@ -2,28 +2,28 @@ cask "spawnai-runner" do
   name "spawnai-runner"
   desc "TODO"
   homepage "https://spawnai.dev"
-  version "1.0.0"
+  version "1.0.1"
   os = OS.mac? ? "macos" : "linux"
   arch = Hardware::CPU.intel? ? "x86_64" : "arm64"
   packages = {
     "macos" => {
       "x86_64" => {
-        url: "https://rstream.io/api/packages/683597911e96d9647917dc5b/download",
-        sha256: "a0a0779f7a6bab3d3203d11534d2816bb83337e6180564c56f870329a1f31d84",
+        url: "https://rstream.io/api/packages/6839c445bd339d43881ff42b/download",
+        sha256: "e58c03caad4682a2b8d228eba5af7a221ee50b7a45ec7568a57875e1c885f062",
       },
       "arm64" => {
-        url: "https://rstream.io/api/packages/683597937c4e5b234baacd5c/download",
-        sha256: "59b2856407b4f94e59561a4652069d3f03b5fb7d3cae06aa4cf3ec61099eb661",
+        url: "https://rstream.io/api/packages/6839c444008a72be4945bd7a/download",
+        sha256: "08fb04d9dbc5a84e4173c267b4484e7bea0f95a9ed14921e1570d2ff159118ba",
       }
     },
     "linux" => {
       "x86_64" => {
-        url: "https://rstream.io/api/packages/683597953a01c69ec4b5d56d/download",
-        sha256: "0017aed19e21a247d4593ed56f0e139eb73a9547e8d206b93d5af6f14213e23d",
+        url: "https://rstream.io/api/packages/6839c4468fb4e073e6351acf/download",
+        sha256: "1187816eefb484df0248b95408bca14c051566eff378b04b6c7b60202cefec7c",
       },
       "arm64" => {
-        url: "https://rstream.io/api/packages/6835979534ed769d9bacfed8/download",
-        sha256: "c8fd21804f361064fc5a6dfd67c6d4671e81a5d89f9c662e8c4c6c8159daefbf",
+        url: "https://rstream.io/api/packages/6839c447bda48d61d2f4a776/download",
+        sha256: "d37e375d88b24d8ed35103218a8e28137a16193cee608b2e9eef4997973ba504",
       }
     }
   }
