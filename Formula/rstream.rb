@@ -21,6 +21,6 @@ class Rstream < Formula
     end
   end
   def install
-    bin.install "bin/rstream"
+    bin.install "rstream"
   end
 end
