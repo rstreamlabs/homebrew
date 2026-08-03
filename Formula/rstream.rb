@@ -1,23 +1,23 @@
 class Rstream < Formula
   desc "Serverless networking."
   homepage "https://rstream.io"
-  version "1.26.3"
+  version "1.26.4"
   on_macos do
     if Hardware::CPU.intel?
-      url "https://rstream.io/api/packages/cmsdhnik3002z04l59p0cdjc5/download"
-      sha256 "f4f6e50b708dd6bc9f017aa1c077c153c5131af161408d14cc94995cb22bd560"
+      url "https://rstream.io/api/packages/cmsdm0fw4005t04iftufgka5g/download"
+      sha256 "60abfde92389e3258e6e730eea2bb7ffafb8af2e7ccf2f3bb0fe2a0b3acefd80"
     else
-      url "https://rstream.io/api/packages/cmsdhnk7x003204l5io0o7b90/download"
-      sha256 "ceacacde6f28be8cecdeecf8381d0e742b5ace4ffb83c2661baf008594b95a8b"
+      url "https://rstream.io/api/packages/cmsdm0hza005w04ifcj5almdl/download"
+      sha256 "d81852ca618965847f9a4df3c1d37bf45a423f87bb3af8e9c7e46303d157c207"
     end
   end
   on_linux do
     if Hardware::CPU.intel?
-      url "https://rstream.io/api/packages/cmsdhnqws000904l2a80v1umo/download"
-      sha256 "3cd621ebf90413ff243d088e331d0ec9afa4090cc377ef75e7b2870f8676d50f"
+      url "https://rstream.io/api/packages/cmsdm0p2x000a04jxs3xel5ht/download"
+      sha256 "86b87bbb92d241e73d9a4f3411d2452e49084d9577e37fcc2f4a509349107478"
     else
-      url "https://rstream.io/api/packages/cmsdhnun2000d04jowdfpsame/download"
-      sha256 "c95caf4d3487b301b7ff78263125c64d13f2e4faeb43f28152ab16091d03a474"
+      url "https://rstream.io/api/packages/cmsdm0t6v000f04jxc9571k81/download"
+      sha256 "d18a188f4e6fd2c4df31518858314ef44da54cd3c9573d4419f0daa3a429f6fd"
     end
   end
   def install
