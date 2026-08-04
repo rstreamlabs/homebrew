@@ -1,5 +1,5 @@
 class Rstream < Formula
-  desc "Serverless networking."
+  desc "Secure outbound-only tunnels for private service connectivity"
   homepage "https://rstream.io"
   version "1.26.5"
   on_macos do
