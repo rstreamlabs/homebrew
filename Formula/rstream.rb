@@ -1,23 +1,23 @@
 class Rstream < Formula
   desc "Secure outbound-only tunnels for private service connectivity"
   homepage "https://rstream.io"
-  version "1.28.0"
+  version "1.28.1"
   on_macos do
     if Hardware::CPU.intel?
-      url "https://rstream.io/api/packages/cmsufwgvq000804la2n7y5jdl/download"
-      sha256 "675e4c0ff42311359086b2e9d2a9f9a2bd3d991114b533f6e3989f6b2e40f464"
+      url "https://rstream.io/api/packages/cmsulfcp4000904l1fdnzauw0/download"
+      sha256 "54c6f7c9f6eabfcac37fd793a12cca5663211a0852645cd10a8c5cab649515a1"
     else
-      url "https://rstream.io/api/packages/cmsufwivk000b04lax587g8nn/download"
-      sha256 "47c723b9d961b069c8a7a94044c38b9e0cdac32fff0a6eee2aea83b9a45144af"
+      url "https://rstream.io/api/packages/cmsulffvv000104ibt964ra90/download"
+      sha256 "0dc464dc35c3dbc98926a31f5674a9b40214981c35685ecae467c45d8339959c"
     end
   end
   on_linux do
     if Hardware::CPU.intel?
-      url "https://rstream.io/api/packages/cmsufwpxq000904la5ch7ozfu/download"
-      sha256 "ac142a879d5b8134a6839da1a4632adc2ddbd3b43befbea0953bbd6ee9511c75"
+      url "https://rstream.io/api/packages/cmsulfp2c000904ibe5i75tpb/download"
+      sha256 "3767306e3c3901b9549d14bf9ec393f9eb4e71ba1503441c8d50e0744d743d56"
     else
-      url "https://rstream.io/api/packages/cmsufwti8000504kzzf7c4kp6/download"
-      sha256 "95e80e4b73854aa04f08c51c18d4870ad847c34f3262548598c01a91cc525996"
+      url "https://rstream.io/api/packages/cmsulfuqu000c04ibqbboko4l/download"
+      sha256 "37ed08b64c9cea5c94196146e7d91289f86cba533af3d54a95762babf4ff0146"
     end
   end
   def install
