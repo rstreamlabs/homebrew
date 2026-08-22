@@ -2,6 +2,7 @@ class Rstream < Formula
   desc "Secure outbound-only tunnels for private service connectivity"
   homepage "https://rstream.io"
   version "1.29.1"
+  license "Apache-2.0"
   on_macos do
     if Hardware::CPU.intel?
       url "https://rstream.io/api/packages/cmt4qjjxk000004jj31rmf195/download"
@@ -22,5 +23,9 @@ class Rstream < Formula
   end
   def install
     bin.install "rstream"
+  end
+
+  test do
+    assert_match version.to_s, shell_output("#{bin}/rstream --version")
   end
 end
