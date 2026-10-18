@@ -1,24 +1,24 @@
 class Rstream < Formula
   desc "Secure outbound-only tunnels for private service connectivity"
   homepage "https://rstream.io"
-  version "1.35.0"
+  version "1.36.0"
   license "Apache-2.0"
   on_macos do
     if Hardware::CPU.intel?
-      url "https://rstream.io/api/packages/cmv9ztby4000u06k1eiv05gqt/download"
-      sha256 "db4e9e0939a2b79f0ae367e34f00dd65c0baf45dad966c239eab15faa05b616a"
+      url "https://rstream.io/api/packages/cmvee6de4000u08jp9bg1kmwe/download"
+      sha256 "1a9876ea6d8f284dc80df927246e050bd63df4530e0bd674d0f12ddc64ae9882"
     else
-      url "https://rstream.io/api/packages/cmv9zt7fc000t06k1iqo0x5kl/download"
-      sha256 "bb05440fcf7efdc6c6803b9a7fc441f9c6cfd8d4d78e95a8264ffd081d86b7d2"
+      url "https://rstream.io/api/packages/cmvee69sp000t08jpfkjaun4j/download"
+      sha256 "3018958744b6365e95ad38d0420b9539d8da88841721c8e916e600f7f18870d4"
     end
   end
   on_linux do
     if Hardware::CPU.intel?
-      url "https://rstream.io/api/packages/cmv9zsd12000n06k10rfpehon/download"
-      sha256 "c4e88cbc4c756eb46d3685115d9766925287756518a69ba771fda3de047c158c"
+      url "https://rstream.io/api/packages/cmvee5ms9000n08jp84zh1bqv/download"
+      sha256 "301c9800a0bfe5e09e8cc2fef43ff252c7be128c059031514e0175c7ac399fa1"
     else
-      url "https://rstream.io/api/packages/cmv9zqw1r000b06k1zfqt6hsw/download"
-      sha256 "85b226047cbced1668fadbcf2a6c1cc1c5c35cc082ab12816cc3a349d50e6c8a"
+      url "https://rstream.io/api/packages/cmvee4di8000b08jprm7u97fb/download"
+      sha256 "033312c2dee0ee809003cff1416847ca37908a49a00f481b69d1448f2eb2a62e"
     end
   end
   def install
