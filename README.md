@@ -1,6 +1,6 @@
 # rstream Homebrew tap
 
-Install the rstream CLI on macOS or Linux through Homebrew. The formula selects the native binary for the current platform and verifies its archive checksum. The CLI itself is maintained in the [Go SDK repository](https://github.com/rstreamlabs/rstream-go).
+The rstream CLI forwards services, shares files and opens remote terminals through outbound connections, without requiring inbound access to the remote host. This Homebrew tap installs the CLI on macOS or Linux. Its formula selects the native binary and verifies the archive checksum. The CLI itself is maintained in the [Go SDK repository](https://github.com/rstreamlabs/rstream-go).
 
 ```sh
 brew tap rstreamlabs/rstream
