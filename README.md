@@ -12,6 +12,6 @@ Follow the [CLI workflow](https://rstream.io/docs/getting-started/cli-workflow) 
 
 ## Maintain the formula
 
-[`Formula/rstream.rb`](Formula/rstream.rb) contains the platform URLs and checksums. Release automation updates them together; a manual correction must keep the binary version, architecture and checksum consistent. Validate a change with Homebrew’s formula checks and the formula’s version test.
+[`Formula/rstream.rb`](Formula/rstream.rb) contains the platform URLs and checksums. Release automation updates them together; a manual correction must keep the binary version, architecture and checksum consistent. [Maintenance](docs/000-maintenance.md) separates local Ruby checks from Homebrew style, installation and the formula’s version test.
 
 For CLI bugs, use [rstream-go issues](https://github.com/rstreamlabs/rstream-go/issues). Report vulnerabilities through the [rstream security policy](https://github.com/rstreamlabs/.github/blob/main/SECURITY.md).
