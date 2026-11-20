@@ -1,28 +1,26 @@
 # Maintain the Homebrew formula
 
-This tap distributes a prebuilt Go CLI. It does not compile the CLI or provide a
-JavaScript SDK. `Formula/rstream.rb` selects macOS or Linux and Intel or ARM
-archives, each with its own checksum. Update the version, artifact identifiers
-and SHA-256 values together from the reviewed native release.
+The formula maps a stable CLI release to four native archives. When updating
+it, use the version and SHA-256 from each reviewed published artifact. Keep
+macOS Intel, macOS Apple silicon, Linux x86-64 and Linux arm64 entries distinct.
 
-From a source checkout, Ruby syntax is a local first check:
+## Verify a candidate
 
-```sh
-ruby -c Formula/rstream.rb
-```
+| Check | What it establishes |
+| --- | --- |
+| `ruby -c Formula/rstream.rb` | The formula parses as Ruby. |
+| `brew style Formula/rstream.rb` | The source follows Homebrew formula conventions. |
+| Download and hash each selected archive | Each advertised URL serves the bytes declared for that platform. |
+| Install and run `brew test rstreamlabs/rstream/rstream` | Homebrew can stage the selected archive and the installed binary reports the expected version. |
 
-With Homebrew available, run its formula checks and test the installed candidate:
+Run the syntax and style commands from the checkout. Perform installation
+and upgrade checks in a disposable environment with the candidate formula
+loaded, then run the version test there. If you are checking archive bytes
+separately, compare the complete downloaded file with the `sha256` in
+[`Formula/rstream.rb`](../Formula/rstream.rb) and check that it contains the
+native `bin/rstream` executable for the expected platform.
 
-```sh
-brew style Formula/rstream.rb
-brew test rstreamlabs/rstream/rstream
-```
-
-The formula test invokes `rstream --version` and checks the expected version.
-It applies to the installed formula, so ensure that it is the candidate being
-reviewed. Syntax or style checks do not download and qualify the release archives.
-An installation or upgrade consumes the selected hosted archive and may change
-the installed CLI; keep that separate from a source-only review.
-
-The formula contains no rstream credentials. CLI authentication and a first
-tunnel follow the [CLI workflow](https://rstream.io/docs/getting-started/cli-workflow).
+The [Go SDK and CLI repository](https://github.com/rstreamlabs/rstream-go)
+builds and publishes the CLI binary. The tap supplies the installation
+metadata. The [tap trust guide](https://docs.brew.sh/Tap-Trust) describes
+Homebrew’s formula-level approval.
