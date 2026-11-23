@@ -16,8 +16,8 @@ rstream --version
 
 The fully qualified name adds the tap when needed and lets Homebrew trust the
 CLI formula individually. The version command confirms which CLI your shell
-can run. Follow the [CLI workflow](https://rstream.io/docs/getting-started/cli-workflow)
-to authenticate, select a project and forward a service.
+can run. To try it, [start a local HTTP server](https://rstream.io/docs/getting-started/quickstart-guide#start-a-local-service)
+and follow the quickstart through your first request.
 
 ## Update or remove the CLI
 
