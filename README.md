@@ -16,8 +16,8 @@ rstream --version
 
 The fully qualified name adds the tap when needed and lets Homebrew trust the
 CLI formula individually. The version command confirms which CLI your shell
-can run. To try it, [start a local HTTP server](https://rstream.io/docs/getting-started/quickstart-guide#start-a-local-service)
-and follow the quickstart through your first request.
+can run. Follow the [CLI quickstart](https://rstream.io/docs/getting-started/quickstart-guide)
+to sign in, forward a local service and check its public address.
 
 ## Update or remove the CLI
 
